@@ -38,12 +38,13 @@ export default function Home() {
             >
               Nosotros
             </a>
+            */}
             <a
               href="#normativa"
               className="text-slate-700 hover:text-[#f36b21] transition font-semibold"
             >
               Normativa
-            </a> */}
+            </a> 
             <a
               href="#contacto"
               className="text-slate-700 hover:text-[#f36b21] transition font-semibold"
