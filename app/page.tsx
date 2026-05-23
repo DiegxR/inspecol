@@ -1,4 +1,5 @@
 import Image from "next/image";
+import PqrForm from "./components/PqrForm";
 
 export default function Home() {
   return (
@@ -31,7 +32,7 @@ export default function Home() {
             >
               Servicios
             </a>
-            <a
+            {/* <a
               href="#nosotros"
               className="text-slate-700 hover:text-[#f36b21] transition font-semibold"
             >
@@ -42,7 +43,7 @@ export default function Home() {
               className="text-slate-700 hover:text-[#f36b21] transition font-semibold"
             >
               Normativa
-            </a>
+            </a> */}
             <a
               href="#contacto"
               className="text-slate-700 hover:text-[#f36b21] transition font-semibold"
@@ -52,7 +53,9 @@ export default function Home() {
           </div>
 
           <a
-            href="#contacto"
+            href="https://wa.me/573118751867?text=Hola%20Inspecol%2C%20quiero%20una%20cotizaci%C3%B3n%20para%20una%20inspecci%C3%B3n%20de%20gas."
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-[#1e4a7a] hover:bg-[#153456] text-white px-5 py-2 rounded-lg font-bold transition flex items-center gap-2 shadow-md"
           >
             <span className="icon-[mdi--phone]"></span>
@@ -289,31 +292,7 @@ export default function Home() {
             </div>
 
             <div className="bg-white p-8 rounded-3xl shadow-2xl border-t-8 border-[#f36b21]">
-              <form className="space-y-4">
-                <input
-                  type="text"
-                  placeholder="Nombre completo"
-                  className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-[#f36b21] outline-none"
-                />
-                <input
-                  type="tel"
-                  placeholder="Número de celular"
-                  className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-[#f36b21] outline-none"
-                />
-                <select className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-[#f36b21] outline-none">
-                  <option>Tipo de Inspección</option>
-                  <option>Residencial</option>
-                  <option>Comercial / Industrial</option>
-                </select>
-                <textarea
-                  rows={3}
-                  placeholder="¿En qué podemos ayudarle?"
-                  className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-[#f36b21] outline-none"
-                ></textarea>
-                <button className="w-full bg-[#f36b21] hover:bg-[#d95a1a] text-white font-black py-4 rounded-xl transition-all shadow-lg uppercase tracking-widest">
-                  Enviar Mensaje
-                </button>
-              </form>
+              <PqrForm />
             </div>
           </div>
         </div>
