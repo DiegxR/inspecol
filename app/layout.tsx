@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Inspecol",
+  title: "Inspecol Certificaciones | Inspección de Gas en Florencia, Caquetá",
   description: "Inspecol certificaciones SAS",
 };
 

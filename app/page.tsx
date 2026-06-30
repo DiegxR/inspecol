@@ -158,7 +158,145 @@ export default function Home() {
           </div>
         </div>
       </section>
+       {/* Normativa Section */}
+      <section id="normativa" className="py-24 bg-slate-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <span className="text-[#f36b21] font-bold tracking-[0.2em] uppercase text-sm">
+              Normativas y Certificaciones
+            </span>
+            <h2 className="text-3xl md:text-5xl font-black text-[#1e4a7a] mt-2">
+              Inspecol Certificaciones: Seguridad y Garantía en Gas Natural
+            </h2>
+          </div>
 
+          <div className="max-w-4xl mx-auto mb-12">
+            <p className="text-slate-700 text-lg leading-relaxed mb-6">
+              En Inspecol Certificaciones, nuestra prioridad es la tranquilidad y seguridad de su hogar o negocio en Florencia, Caquetá. Somos expertos en la inspección, mantenimiento y certificación de instalaciones de gas natural, garantizando que cada sistema opere bajo los más altos estándares técnicos y legales vigentes en Colombia.
+            </p>
+
+            <h3 className="text-2xl font-bold text-[#1e4a7a] mb-4">
+              Nuestro Compromiso con la Seguridad
+            </h3>
+            <p className="text-slate-700 leading-relaxed mb-8">
+              Entendemos que el gas natural es un servicio esencial que exige rigor. Por ello, en cada una de nuestras intervenciones, aplicamos un protocolo de evaluación técnica diseñado para detectar y corregir cualquier riesgo, protegiendo así su patrimonio y la integridad de su familia.
+            </p>
+
+            <h3 className="text-2xl font-bold text-[#1e4a7a] mb-4">
+              Marco Normativo y Calidad
+            </h3>
+            <p className="text-slate-700 mb-6">
+              Operamos bajo el estricto cumplimiento de las directrices de los entes reguladores nacionales. Nuestra metodología de trabajo se basa en:
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="icon-[mdi--gavel] text-2xl text-[#f36b21]"></span>
+                  <h4 className="font-bold text-[#1e4a7a]">Regulación CREG</h4>
+                </div>
+                <p className="text-slate-600 text-sm leading-relaxed">
+                  Cumplimiento total de la Resolución 067 de 1995 y Resolución 059 de 2012, referentes al Código de Distribución de Gas y los procesos de Revisión Periódica Obligatoria (RPO).
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="icon-[mdi--office-building] text-2xl text-[#f36b21]"></span>
+                  <h4 className="font-bold text-[#1e4a7a]">Ministerio de Minas y Energía</h4>
+                </div>
+                <p className="text-slate-600 text-sm leading-relaxed">
+                  Ejecución técnica alineada con la Resolución 41385 de 2017, asegurando el manejo correcto de defectos y condiciones de seguridad en instalaciones internas.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="icon-[mdi--checkbox-marked-circle] text-2xl text-[#f36b21]"></span>
+                  <h4 className="font-bold text-[#1e4a7a]">Estándares Técnicos (NTC)</h4>
+                </div>
+                <p className="text-slate-600 text-sm leading-relaxed">
+                  Aplicamos estrictamente las normas NTC 2505 (diseño, construcción y pruebas de hermeticidad) y NTC 3853, garantizando que cada componente de su sistema cumpla con la calidad requerida.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="icon-[mdi--certificate] text-2xl text-[#f36b21]"></span>
+                  <h4 className="font-bold text-[#1e4a7a]">Acreditación</h4>
+                </div>
+                <p className="text-slate-600 text-sm leading-relaxed">
+                  Nuestros procesos de inspección siguen los lineamientos de imparcialidad y precisión bajo la norma ISO/IEC 17020.
+                </p>
+              </div>
+            </div>
+
+            <h3 className="text-2xl font-bold text-[#1e4a7a] mb-4">
+              ¿Por qué elegir a Inspecol Certificaciones?
+            </h3>
+            <div className="grid md:grid-cols-2 gap-4 mb-8">
+              <div className="flex items-start gap-3">
+                <span className="icon-[mdi--check-circle] text-[#f36b21] text-xl mt-0.5"></span>
+                <div>
+                  <p className="font-bold text-slate-800">Personal Altamente Calificado</p>
+                  <p className="text-slate-600 text-sm">Nuestro equipo técnico cuenta con certificación de competencias laborales (SENA) y está en constante actualización normativa.</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="icon-[mdi--check-circle] text-[#f36b21] text-xl mt-0.5"></span>
+                <div>
+                  <p className="font-bold text-slate-800">Tecnología y Precisión</p>
+                  <p className="text-slate-600 text-sm">Utilizamos equipos de medición calibrados para realizar diagnósticos exactos y oportunos.</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="icon-[mdi--check-circle] text-[#f36b21] text-xl mt-0.5"></span>
+                <div>
+                  <p className="font-bold text-slate-800">Transparencia Total</p>
+                  <p className="text-slate-600 text-sm">Entregamos certificados de conformidad con plena validez legal, reportando su estado ante la empresa distribuidora de gas correspondiente.</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="icon-[mdi--check-circle] text-[#f36b21] text-xl mt-0.5"></span>
+                <div>
+                  <p className="font-bold text-slate-800">Presencia Local</p>
+                  <p className="text-slate-600 text-sm">Conocemos las necesidades de nuestra región. Estamos comprometidos con el desarrollo seguro de Florencia, Caquetá.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-r from-[#1e4a7a] to-[#153456] rounded-3xl p-8 text-center">
+              <h3 className="text-2xl font-bold text-white mb-4">
+                ¿Necesita una revisión o certificación?
+              </h3>
+              <p className="text-blue-100 mb-6">
+                La seguridad no puede esperar. Si requiere programar una inspección periódica, tiene dudas sobre su instalación o desea una revisión preventiva, estamos listos para atenderle.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a
+                  href="https://wa.me/573118751867?text=Hola%20Inspecol%2C%20quiero%20solicitar%20una%20inspecci%C3%B3n%20de%20gas."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#f36b21] hover:bg-[#d95a1a] text-white px-8 py-4 rounded-lg font-bold transition flex items-center justify-center gap-2"
+                >
+                  <span className="icon-[mdi--whatsapp] text-xl"></span>
+                  Solicitar Inspección vía WhatsApp
+                </a>
+                <a
+                  href="#servicios"
+                  className="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-white px-8 py-4 rounded-lg font-bold transition"
+                >
+                  Consultar Servicios
+                </a>
+              </div>
+              <p className="text-blue-200 mt-6 text-sm italic">
+                Inspecol Certificaciones: Expertos en seguridad, comprometidos con el Caquetá.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
       {/* Services Section */}
       <section id="servicios" className="py-24 bg-white">
         <div className="container mx-auto px-4">
@@ -252,6 +390,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+     
+
 
       {/* Contact Section - Usando los colores del logo en el formulario */}
       <section id="contacto" className="py-20 bg-[#1e4a7a]">
