@@ -64,54 +64,54 @@ export async function POST(request: Request) {
       timeStyle: "short",
     }).format(now);
 
-    // Envío de correos deshabilitado temporalmente para probar la notificación de WhatsApp.
-    // const transporter = createTransporter();
-    // await transporter.verify();
+    
+    const transporter = createTransporter();
+    await transporter.verify();
 
-    // const clientMail = transporter.sendMail({
-    //   from: smtpFrom,
-    //   to: email,
-    //   replyTo,
-    //   subject: `Constancia de recepción PQR ${radicado}`,
-    //   html: `
-    //     <div style="font-family: Arial, sans-serif; color: #1f2937; line-height:1.6;">
-    //       <h2 style="color:#1e4a7a;">Constancia de radicado</h2>
-    //       <p>Hola <strong>${name}</strong>,</p>
-    //       <p>Hemos recibido su solicitud ${pqrType.toUpperCase()} y su radicado es:</p>
-    //       <p style="font-size:1.25rem; font-weight:700; color:#f36b21;">${radicado}</p>
-    //       <p>Fecha y hora de radicado: ${formattedDate}</p>
-    //       <p>Su solicitud ya se encuentra registrada. Con base en la normatividad vigente, INSPECOL S.A.S. cuenta con 15 días hábiles para dar respuesta.</p>
-    //       <hr style="margin:24px 0; border:none; border-top:1px solid #e2e8f0;" />
-    //       <p style="font-size:0.95rem; color:#475569;">Si no recibe este correo, revise su carpeta de spam.</p>
-    //       <p style="font-size:0.95rem; color:#475569;">Atentamente,<br/>INSPECOL CERTIFICACIONES S.A.S.</p>
-    //     </div>
-    //   `,
-    //   text: `Hola ${name},\n\nHemos recibido su solicitud ${pqrType}. Su radicado es ${radicado}.\nFecha y hora de radicado: ${formattedDate}.\n\nINSPECOL cuenta con 15 días hábiles para dar respuesta.\n\nGracias,\nINSPECOL CERTIFICACIONES S.A.S.`,
-    // });
+    const clientMail = transporter.sendMail({
+      from: smtpFrom,
+      to: email,
+      replyTo,
+      subject: `Constancia de recepción PQR ${radicado}`,
+      html: `
+        <div style="font-family: Arial, sans-serif; color: #1f2937; line-height:1.6;">
+          <h2 style="color:#1e4a7a;">Constancia de radicado</h2>
+          <p>Hola <strong>${name}</strong>,</p>
+          <p>Hemos recibido su solicitud ${pqrType.toUpperCase()} y su radicado es:</p>
+          <p style="font-size:1.25rem; font-weight:700; color:#f36b21;">${radicado}</p>
+          <p>Fecha y hora de radicado: ${formattedDate}</p>
+          <p>Su solicitud ya se encuentra registrada. Con base en la normatividad vigente, INSPECOL S.A.S. cuenta con 15 días hábiles para dar respuesta.</p>
+          <hr style="margin:24px 0; border:none; border-top:1px solid #e2e8f0;" />
+          <p style="font-size:0.95rem; color:#475569;">Si no recibe este correo, revise su carpeta de spam.</p>
+          <p style="font-size:0.95rem; color:#475569;">Atentamente,<br/>INSPECOL CERTIFICACIONES S.A.S.</p>
+        </div>
+      `,
+      text: `Hola ${name},\n\nHemos recibido su solicitud ${pqrType}. Su radicado es ${radicado}.\nFecha y hora de radicado: ${formattedDate}.\n\nINSPECOL cuenta con 15 días hábiles para dar respuesta.\n\nGracias,\nINSPECOL CERTIFICACIONES S.A.S.`,
+    });
 
-    // const internalMail = transporter.sendMail({
-    //   from: smtpFrom,
-    //   to: internalEmail,
-    //   replyTo: email,
-    //   subject: `Nueva PQR recibida - ${radicado}`,
-    //   html: `
-    //     <div style="font-family: Arial, sans-serif; color: #1f2937; line-height:1.6;">
-    //       <h2 style="color:#1e4a7a;">Nueva PQR recibida</h2>
-    //       <p><strong>Radicado:</strong> ${radicado}</p>
-    //       <p><strong>Tipo:</strong> ${pqrType}</p>
-    //       <p><strong>Nombre:</strong> ${name}</p>
-    //       <p><strong>Documento:</strong> ${document}</p>
-    //       <p><strong>Correo:</strong> ${email}</p>
-    //       <p><strong>Fecha y hora:</strong> ${formattedDate}</p>
-    //       <p><strong>Descripción:</strong></p>
-    //       <p style="white-space: pre-wrap;">${description}</p>
-    //       <p style="margin-top:1rem;"><strong>Aceptó tratamiento de datos:</strong> Sí</p>
-    //     </div>
-    //   `,
-    //   text: `Nueva PQR recibida\n\nRadicado: ${radicado}\nTipo: ${pqrType}\nNombre: ${name}\nDocumento: ${document}\nCorreo: ${email}\nFecha y hora: ${formattedDate}\n\nDescripción:\n${description}\n\nAceptó tratamiento de datos: Sí`,
-    // });
+    const internalMail = transporter.sendMail({
+      from: smtpFrom,
+      to: internalEmail,
+      replyTo: email,
+      subject: `Nueva PQR recibida - ${radicado}`,
+      html: `
+        <div style="font-family: Arial, sans-serif; color: #1f2937; line-height:1.6;">
+          <h2 style="color:#1e4a7a;">Nueva PQR recibida</h2>
+          <p><strong>Radicado:</strong> ${radicado}</p>
+          <p><strong>Tipo:</strong> ${pqrType}</p>
+          <p><strong>Nombre:</strong> ${name}</p>
+          <p><strong>Documento:</strong> ${document}</p>
+          <p><strong>Correo:</strong> ${email}</p>
+          <p><strong>Fecha y hora:</strong> ${formattedDate}</p>
+          <p><strong>Descripción:</strong></p>
+          <p style="white-space: pre-wrap;">${description}</p>
+          <p style="margin-top:1rem;"><strong>Aceptó tratamiento de datos:</strong> Sí</p>
+        </div>
+      `,
+      text: `Nueva PQR recibida\n\nRadicado: ${radicado}\nTipo: ${pqrType}\nNombre: ${name}\nDocumento: ${document}\nCorreo: ${email}\nFecha y hora: ${formattedDate}\n\nDescripción:\n${description}\n\nAceptó tratamiento de datos: Sí`,
+    });
 
-    // await Promise.all([clientMail, internalMail]);
+    await Promise.all([clientMail, internalMail]);
 
     await sendWhatsAppNotification(
       `Nueva PQR radicada\n\nRadicado: ${radicado}\nTipo: ${pqrType}\nNombre: ${name}\nDocumento: ${document}\nCorreo: ${email}\nFecha y hora: ${formattedDate}\n\nDescripción:\n${description}`,
