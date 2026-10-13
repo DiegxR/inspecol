@@ -46,6 +46,12 @@ export default function Home() {
               Normativa
             </a> 
             <a
+              href="#politicas"
+              className="text-slate-700 hover:text-[#f36b21] transition font-semibold"
+            >
+              Políticas
+            </a>
+            <a
               href="#contacto"
               className="text-slate-700 hover:text-[#f36b21] transition font-semibold"
             >
@@ -315,7 +321,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Servicio 1 - Residencial */}
             <div className="relative group overflow-hidden rounded-2xl bg-slate-50 p-8 border border-slate-100 hover:border-[#f36b21]/30 transition-all duration-300">
               <div className="w-16 h-16 bg-[#1e4a7a] rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform">
@@ -337,6 +343,10 @@ export default function Home() {
                   <span className="icon-[mdi--check-bold] text-[#f36b21]"></span>{" "}
                   Medidores de Gas
                 </li>
+                <li className="flex items-center gap-2">
+                  <span className="icon-[mdi--check-bold] text-[#f36b21]"></span>{" "}
+                  Revisión Periódica Obligatoria (RPO)
+                </li>
               </ul>
             </div>
 
@@ -349,49 +359,714 @@ export default function Home() {
                 Comercial
               </h3>
               <p className="text-slate-600 text-sm leading-relaxed mb-6">
-                Restaurantes y hoteles. Aseguramos el cumplimiento de normativas
-                para su negocio.
+                Restaurantes, hoteles y locales. Aseguramos el cumplimiento de
+                normativas para su negocio.
               </p>
               <ul className="space-y-3 text-sm font-semibold text-slate-700">
                 <li className="flex items-center gap-2">
-                  <span className="icon-[mdi--check-bold] text-[#1e4a7a]"></span>{" "}
+                  <span className="icon-[mdi--check-bold] text-[#f36b21]"></span>{" "}
                   Hornos y Estufas
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="icon-[mdi--check-bold] text-[#1e4a7a]"></span>{" "}
+                  <span className="icon-[mdi--check-bold] text-[#f36b21]"></span>{" "}
                   Ventilación Mecánica
                 </li>
-              </ul>
-            </div>
-
-            {/* Servicio 3 - Industrial */}
-            <div className="relative group overflow-hidden rounded-2xl bg-slate-50 p-8 border border-slate-100 hover:border-[#f36b21]/30 transition-all duration-300">
-              <div className="w-16 h-16 bg-[#1e4a7a] rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform">
-                <span className="icon-[mdi--factory] text-3xl text-white"></span>
-              </div>
-              <h3 className="text-xl font-bold text-[#1e4a7a] mb-4">
-                Industrial
-              </h3>
-              <p className="text-slate-600 text-sm leading-relaxed mb-6">
-                Grandes consumidores y plantas de producción. Inspecciones de
-                alta presión.
-              </p>
-              <ul className="space-y-3 text-sm font-semibold text-slate-700">
                 <li className="flex items-center gap-2">
                   <span className="icon-[mdi--check-bold] text-[#f36b21]"></span>{" "}
-                  Calderas e Intercambiadores
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="icon-[mdi--check-bold] text-[#f36b21]"></span>{" "}
-                  Auditoría RETIE
+                  Cocinas Industriales
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </section>
-     
 
+      {/* Policies Section */}
+      <section id="politicas" className="py-24 bg-slate-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-6">
+            <span className="text-[#f36b21] font-bold tracking-[0.2em] uppercase text-sm">
+              Gobierno y Ética
+            </span>
+            <h2 className="text-3xl md:text-5xl font-black text-[#1e4a7a] mt-2">
+              Políticas Institucionales
+            </h2>
+            <div className="flex flex-wrap justify-center gap-x-3 gap-y-2 mt-4 text-sm font-bold text-slate-600">
+              <span>Imparcialidad</span>
+              <span className="text-[#f36b21]">•</span>
+              <span>Operación</span>
+              <span className="text-[#f36b21]">•</span>
+              <span>Competencia</span>
+              <span className="text-[#f36b21]">•</span>
+              <span>Cultura de Integridad</span>
+            </div>
+            <p className="text-slate-600 max-w-2xl mx-auto mt-4 leading-relaxed">
+              Lineamientos que garantizan la confiabilidad, objetividad,
+              integridad y competencia en las actividades de inspección.
+            </p>
+          </div>
+
+          {/* Política de Imparcialidad - destacada */}
+          <div className="max-w-6xl mx-auto mb-8 rounded-3xl overflow-hidden border border-slate-200 shadow-sm bg-white">
+            <div className="bg-gradient-to-r from-[#1e4a7a] to-[#153456] px-8 py-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
+              <div className="flex items-center gap-4">
+                <div className="w-14 h-14 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center shrink-0">
+                  <span className="icon-[mdi--scale-balance] text-3xl text-white"></span>
+                </div>
+                <div>
+                  <p className="text-[#f36b21] font-black text-sm tracking-widest uppercase">
+                    Política 1
+                  </p>
+                  <h3 className="text-2xl font-black text-white leading-tight">
+                    Imparcialidad, Integridad e Independencia
+                  </h3>
+                </div>
+              </div>
+              <span className="icon-[mdi--certificate-outline] text-5xl text-white/20 hidden md:block"></span>
+            </div>
+
+            <div className="p-8">
+              <p className="text-slate-700 leading-relaxed mb-6 text-sm md:text-base">
+                INSPECOL presta sus servicios de inspección bajo los principios de{" "}
+                <strong className="text-[#1e4a7a]">
+                  imparcialidad, independencia, objetividad, integridad y
+                  confidencialidad
+                </strong>
+                , garantizando que todas sus actividades se realizan con
+                transparencia y ética profesional. Reconocemos la importancia de
+                identificar, analizar y gestionar los riesgos a la imparcialidad,
+                comprometiéndonos a que nuestras actividades se realicen libres
+                de presiones comerciales, financieras o de cualquier otra índole
+                que puedan comprometer la objetividad de los resultados.
+              </p>
+
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="flex items-start gap-3 bg-slate-50 rounded-xl p-4 border border-slate-100">
+                  <span className="icon-[mdi--check-decagram] text-[#f36b21] text-xl mt-0.5 shrink-0"></span>
+                  <p className="text-sm text-slate-700">
+                    Actividades de inspección desarrolladas de forma
+                    <strong> independiente y objetiva</strong>, sin influencias
+                    indebidas que afecten los resultados.
+                  </p>
+                </div>
+                <div className="flex items-start gap-3 bg-slate-50 rounded-xl p-4 border border-slate-100">
+                  <span className="icon-[mdi--check-decagram] text-[#f36b21] text-xl mt-0.5 shrink-0"></span>
+                  <p className="text-sm text-slate-700">
+                    Prestación del servicio{" "}
+                    <strong>sin discriminación</strong> hacia los solicitantes,
+                    garantizando igualdad de acceso.
+                  </p>
+                </div>
+                <div className="flex items-start gap-3 bg-slate-50 rounded-xl p-4 border border-slate-100">
+                  <span className="icon-[mdi--check-decagram] text-[#f36b21] text-xl mt-0.5 shrink-0"></span>
+                  <p className="text-sm text-slate-700">
+                    La información sobre nuestros servicios refleja de manera{" "}
+                    <strong>veraz y transparente</strong> las capacidades y
+                    condiciones reales del organismo.
+                  </p>
+                </div>
+                <div className="flex items-start gap-3 bg-slate-50 rounded-xl p-4 border border-slate-100">
+                  <span className="icon-[mdi--check-decagram] text-[#f36b21] text-xl mt-0.5 shrink-0"></span>
+                  <p className="text-sm text-slate-700">
+                    Toda la información obtenida es tratada con{" "}
+                    <strong>estricta confidencialidad</strong>, protegiendo los
+                    intereses de clientes y partes interesadas.
+                  </p>
+                </div>
+                <div className="flex items-start gap-3 bg-slate-50 rounded-xl p-4 border border-slate-100">
+                  <span className="icon-[mdi--check-decagram] text-[#f36b21] text-xl mt-0.5 shrink-0"></span>
+                  <p className="text-sm text-slate-700">
+                    Los registros se mantienen bajo{" "}
+                    <strong>control y confidencialidad</strong>, salvo documentos
+                    de carácter público por disposición legal.
+                  </p>
+                </div>
+                <div className="flex items-start gap-3 bg-slate-50 rounded-xl p-4 border border-slate-100">
+                  <span className="icon-[mdi--check-decagram] text-[#f36b21] text-xl mt-0.5 shrink-0"></span>
+                  <p className="text-sm text-slate-700">
+                    Servicios realizados únicamente por{" "}
+                    <strong>personal competente, calificado y autorizado</strong>{" "}
+                    que garantiza la confiabilidad de los resultados.
+                  </p>
+                </div>
+                <div className="flex items-start gap-3 bg-slate-50 rounded-xl p-4 border border-slate-100">
+                  <span className="icon-[mdi--check-decagram] text-[#f36b21] text-xl mt-0.5 shrink-0"></span>
+                  <p className="text-sm text-slate-700">
+                    Para preservar la imparcialidad,{" "}
+                    <strong>
+                      no realizamos consultoría, diseño, venta, instalación ni
+                      mantenimiento
+                    </strong>{" "}
+                    de instalaciones de gas.
+                  </p>
+                </div>
+                <div className="flex items-start gap-3 bg-slate-50 rounded-xl p-4 border border-slate-100">
+                  <span className="icon-[mdi--check-decagram] text-[#f36b21] text-xl mt-0.5 shrink-0"></span>
+                  <p className="text-sm text-slate-700">
+                    La dirección asume la responsabilidad de velar permanentemente
+                    por la <strong>imparcialidad, confidencialidad e integridad</strong>{" "}
+                    y la mejora continua.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Cuatro políticas / principios */}
+          <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 mb-8">
+            {/* Política de Operación */}
+            <div className="rounded-3xl bg-white border border-slate-200 shadow-sm overflow-hidden">
+              <div className="bg-[#1e4a7a] px-7 py-5 flex items-center gap-4">
+                <div className="w-12 h-12 rounded-xl bg-white/10 border border-white/20 flex items-center justify-center shrink-0">
+                  <span className="icon-[mdi--cog] text-2xl text-white"></span>
+                </div>
+                <div>
+                  <p className="text-[#f36b21] font-black text-xs tracking-widest uppercase">
+                    Política 2
+                  </p>
+                  <h3 className="text-xl font-black text-white leading-tight">
+                    Política de Operación
+                  </h3>
+                </div>
+              </div>
+              <div className="p-7">
+                <p className="text-slate-700 text-sm leading-relaxed mb-5 bg-slate-50 rounded-xl p-4 border border-slate-100">
+                  INSPECOL desarrolla sus actividades garantizando el
+                  cumplimiento de requisitos normativos, reglamentarios y del
+                  sistema de gestión.
+                </p>
+                <ul className="space-y-3 text-sm text-slate-700">
+                  <li className="flex items-start gap-3">
+                    <span className="icon-[mdi--file-document-outline] text-[#1e4a7a] text-lg mt-0.5 shrink-0"></span>
+                    Uso de documentos técnicos y normativos vigentes.
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="icon-[mdi--wrench-outline] text-[#1e4a7a] text-lg mt-0.5 shrink-0"></span>
+                    Equipos calibrados o verificados.
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="icon-[mdi--office-building-outline] text-[#1e4a7a] text-lg mt-0.5 shrink-0"></span>
+                    Instalaciones adecuadas para la inspección.
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="icon-[mdi--account-hard-hat-outline] text-[#1e4a7a] text-lg mt-0.5 shrink-0"></span>
+                    Personal competente y autorizado.
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="icon-[mdi--target] text-[#1e4a7a] text-lg mt-0.5 shrink-0"></span>
+                    Sistema de gestión orientado a la calidad, la mejora continua
+                    y la confiabilidad.
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="icon-[mdi--chart-line] text-[#1e4a7a] text-lg mt-0.5 shrink-0"></span>
+                    Seguimiento mediante auditorías internas, revisiones por la
+                    dirección y evaluaciones de organismos de acreditación.
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="icon-[mdi--account-group-outline] text-[#1e4a7a] text-lg mt-0.5 shrink-0"></span>
+                    Compromiso de la dirección con los recursos necesarios para la
+                    operación eficaz.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Política de Competencia del Personal */}
+            <div className="rounded-3xl bg-white border border-slate-200 shadow-sm overflow-hidden">
+              <div className="bg-[#1e4a7a] px-7 py-5 flex items-center gap-4">
+                <div className="w-12 h-12 rounded-xl bg-white/10 border border-white/20 flex items-center justify-center shrink-0">
+                  <span className="icon-[mdi--account-tie-outline] text-2xl text-white"></span>
+                </div>
+                <div>
+                  <p className="text-[#f36b21] font-black text-xs tracking-widest uppercase">
+                    Política 3
+                  </p>
+                  <h3 className="text-xl font-black text-white leading-tight">
+                    Competencia del Personal
+                  </h3>
+                </div>
+              </div>
+              <div className="p-7">
+                <p className="text-slate-700 text-sm leading-relaxed mb-5 bg-slate-50 rounded-xl p-4 border border-slate-100">
+                  La competencia del personal es fundamental para asegurar la
+                  calidad, confiabilidad e imparcialidad de las actividades de
+                  inspección.
+                </p>
+                <ul className="space-y-3 text-sm text-slate-700">
+                  <li className="flex items-start gap-3">
+                    <span className="icon-[mdi--account-check-outline] text-[#1e4a7a] text-lg mt-0.5 shrink-0"></span>
+                    El personal técnico y administrativo cumple requisitos de
+                    competencia definidos.
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="icon-[mdi--school-outline] text-[#1e4a7a] text-lg mt-0.5 shrink-0"></span>
+                    Formación, capacitación, actualización y familiarización
+                    continua.
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="icon-[mdi--folder-multiple-outline] text-[#1e4a7a] text-lg mt-0.5 shrink-0"></span>
+                    Conocimiento de la documentación del Sistema Integrado de
+                    Gestión (SIG).
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="icon-[mdi--certificate-outline] text-[#1e4a7a] text-lg mt-0.5 shrink-0"></span>
+                    Conocimiento de los requisitos de la NTC ISO/IEC 17020.
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="icon-[mdi--target] text-[#1e4a7a] text-lg mt-0.5 shrink-0"></span>
+                    Dominio de métodos y procedimientos de inspección aplicables.
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="icon-[mdi--book-open-outline] text-[#1e4a7a] text-lg mt-0.5 shrink-0"></span>
+                    Conocimiento de requisitos técnicos, normativos y
+                    reglamentarios.
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="icon-[mdi--shield-check-outline] text-[#1e4a7a] text-lg mt-0.5 shrink-0"></span>
+                    Fomento de ética, transparencia, imparcialidad y
+                    confidencialidad.
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="icon-[mdi--chart-line] text-[#1e4a7a] text-lg mt-0.5 shrink-0"></span>
+                    Seguimiento y evaluación permanente del desempeño.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Cultura de Integridad */}
+            <div className="rounded-3xl bg-white border border-slate-200 shadow-sm overflow-hidden">
+              <div className="bg-[#1e4a7a] px-7 py-5 flex items-center gap-4">
+                <div className="w-12 h-12 rounded-xl bg-white/10 border border-white/20 flex items-center justify-center shrink-0">
+                  <span className="icon-[mdi--handshake-outline] text-2xl text-white"></span>
+                </div>
+                <div>
+                  <p className="text-[#f36b21] font-black text-xs tracking-widest uppercase">
+                    Política 4
+                  </p>
+                  <h3 className="text-xl font-black text-white leading-tight">
+                    Cultura de Integridad
+                  </h3>
+                </div>
+              </div>
+              <div className="p-7">
+                <p className="text-slate-700 text-sm leading-relaxed mb-5 bg-slate-50 rounded-xl p-4 border border-slate-100">
+                  En INSPECOL promovemos una cultura de integridad basada en un
+                  código que orienta a nuestro personal en la toma de decisiones
+                  ante situaciones o dilemas éticos, fortaleciendo la confianza de
+                  nuestros clientes y partes interesadas.
+                </p>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="rounded-2xl bg-[#1e4a7a] p-5 text-white">
+                    <span className="icon-[mdi--shield-lock-outline] text-3xl mb-3 block"></span>
+                    <p className="font-bold mb-1">Confianza</p>
+                    <p className="text-xs text-blue-100 leading-relaxed">
+                      Activo esencial y base de la reputación del organismo.
+                    </p>
+                  </div>
+                  <div className="rounded-2xl bg-[#153456] p-5 text-white">
+                    <span className="icon-[mdi--account-group-outline] text-3xl mb-3 block"></span>
+                    <p className="font-bold mb-1">Honestidad y transparencia</p>
+                    <p className="text-xs text-blue-100 leading-relaxed">
+                      Actuar con sinceridad, sin engaño.
+                    </p>
+                  </div>
+                  <div className="rounded-2xl bg-[#153456] p-5 text-white">
+                    <span className="icon-[mdi--clipboard-check-outline] text-3xl mb-3 block"></span>
+                    <p className="font-bold mb-1">Responsabilidad</p>
+                    <p className="text-xs text-blue-100 leading-relaxed">
+                      Asumir las consecuencias de las acciones y omisiones.
+                    </p>
+                  </div>
+                  <div className="rounded-2xl bg-[#1e4a7a] p-5 text-white">
+                    <span className="icon-[mdi--scale-balance] text-3xl mb-3 block"></span>
+                    <p className="font-bold mb-1">Principios</p>
+                    <p className="text-xs text-blue-100 leading-relaxed">
+                      Decisiones guiadas por ética, justicia y respeto a las
+                      partes interesadas.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Resultados que busca INSPECOL */}
+            <div className="rounded-3xl bg-gradient-to-br from-[#1e4a7a] to-[#153456] border border-slate-200 shadow-sm overflow-hidden">
+              <div className="px-7 py-5 flex items-center gap-4 border-b border-white/10">
+                <div className="w-12 h-12 rounded-xl bg-[#f36b21] flex items-center justify-center shrink-0">
+                  <span className="icon-[mdi--chart-areaspline] text-2xl text-white"></span>
+                </div>
+                <div>
+                  <p className="text-[#f36b21] font-black text-xs tracking-widest uppercase">
+                    Resultados
+                  </p>
+                  <h3 className="text-xl font-black text-white leading-tight">
+                    Resultados que busca INSPECOL
+                  </h3>
+                </div>
+              </div>
+              <div className="p-7">
+                <p className="text-blue-100 text-sm leading-relaxed mb-5">
+                  Estas políticas se traducen en resultados que generan valor y
+                  confianza a nuestros clientes y partes interesadas.
+                </p>
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="flex items-center gap-3 bg-white/5 rounded-xl p-3 border border-white/10">
+                    <span className="icon-[mdi--check-decagram] text-[#f36b21] text-xl shrink-0"></span>
+                    <p className="text-xs font-semibold text-white leading-snug">
+                      Confiabilidad de los resultados
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-3 bg-white/5 rounded-xl p-3 border border-white/10">
+                    <span className="icon-[mdi--target] text-[#f36b21] text-xl shrink-0"></span>
+                    <p className="text-xs font-semibold text-white leading-snug">
+                      Objetividad en la inspección
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-3 bg-white/5 rounded-xl p-3 border border-white/10">
+                    <span className="icon-[mdi--gavel] text-[#f36b21] text-xl shrink-0"></span>
+                    <p className="text-xs font-semibold text-white leading-snug">
+                      Cumplimiento normativo
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-3 bg-white/5 rounded-xl p-3 border border-white/10">
+                    <span className="icon-[mdi--lock-check-outline] text-[#f36b21] text-xl shrink-0"></span>
+                    <p className="text-xs font-semibold text-white leading-snug">
+                      Protección de la información
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-3 bg-white/5 rounded-xl p-3 border border-white/10 col-span-2">
+                    <span className="icon-[mdi--account-heart-outline] text-[#f36b21] text-xl shrink-0"></span>
+                    <p className="text-xs font-semibold text-white leading-snug">
+                      Confianza de clientes y partes interesadas
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Quejas y Apelaciones - Procedimiento PR-008 */}
+          <div className="max-w-6xl mx-auto rounded-3xl overflow-hidden border border-slate-200 shadow-sm bg-white">
+            <div className="bg-gradient-to-r from-[#1e4a7a] to-[#153456] px-8 py-7 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+              <div className="flex items-center gap-4">
+                <div className="w-14 h-14 rounded-2xl bg-[#f36b21] flex items-center justify-center shrink-0">
+                  <span className="icon-[mdi--message-alert-outline] text-3xl text-white"></span>
+                </div>
+                <div>
+                  <p className="text-[#f36b21] font-black text-sm tracking-widest uppercase">
+                    Procedimiento PR-008
+                  </p>
+                  <h3 className="text-2xl font-black text-white leading-tight">
+                    Quejas y Apelaciones
+                  </h3>
+                  <p className="text-blue-100 text-sm mt-1">
+                    Escuchar, analizar y responder de manera justa, transparente
+                    y oportuna.
+                  </p>
+                </div>
+              </div>
+              <div className="flex flex-wrap gap-3">
+                <div className="bg-white/10 border border-white/20 rounded-xl px-4 py-2">
+                  <p className="text-[10px] uppercase tracking-widest text-blue-200 font-bold">
+                    Versión
+                  </p>
+                  <p className="text-white font-black">1</p>
+                </div>
+                <div className="bg-white/10 border border-white/20 rounded-xl px-4 py-2">
+                  <p className="text-[10px] uppercase tracking-widest text-blue-200 font-bold">
+                    Vigencia
+                  </p>
+                  <p className="text-white font-black">2025-11-15</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-8">
+              {/* Definiciones */}
+              <div className="grid md:grid-cols-3 gap-4 mb-8">
+                <div className="rounded-2xl border border-slate-200 p-5 bg-slate-50">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 rounded-xl bg-[#1e4a7a] flex items-center justify-center shrink-0">
+                      <span className="icon-[mdi--bullhorn-outline] text-xl text-white"></span>
+                    </div>
+                    <h4 className="font-black text-[#1e4a7a] uppercase text-sm">
+                      Queja
+                    </h4>
+                  </div>
+                  <p className="text-slate-600 text-sm leading-relaxed">
+                    Expresión de insatisfacción sobre las actividades del OEC, para
+                    la cual se espera respuesta.
+                  </p>
+                </div>
+                <div className="rounded-2xl border border-slate-200 p-5 bg-slate-50">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 rounded-xl bg-[#f36b21] flex items-center justify-center shrink-0">
+                      <span className="icon-[mdi--gavel] text-xl text-white"></span>
+                    </div>
+                    <h4 className="font-black text-[#f36b21] uppercase text-sm">
+                      Apelación
+                    </h4>
+                  </div>
+                  <p className="text-slate-600 text-sm leading-relaxed">
+                    Solicitud para reconsiderar una decisión adversa tomada por el
+                    OEC relacionada con el estado o resultado de inspección.
+                  </p>
+                </div>
+                <div className="rounded-2xl border border-slate-200 p-5 bg-slate-50">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 rounded-xl bg-[#1e4a7a] flex items-center justify-center shrink-0">
+                      <span className="icon-[mdi--lightbulb-on-outline] text-xl text-white"></span>
+                    </div>
+                    <h4 className="font-black text-[#1e4a7a] uppercase text-sm">
+                      Sugerencia
+                    </h4>
+                  </div>
+                  <p className="text-slate-600 text-sm leading-relaxed">
+                    Recomendación o comentario para la mejora de los servicios o
+                    actividades del OEC.
+                  </p>
+                </div>
+              </div>
+
+              {/* Políticas clave */}
+              <div className="mb-8">
+                <h4 className="font-black text-[#1e4a7a] uppercase text-sm tracking-widest mb-4 flex items-center gap-2">
+                  <span className="icon-[mdi--shield-check] text-[#f36b21] text-xl"></span>
+                  Políticas Clave
+                </h4>
+                <div className="grid md:grid-cols-2 gap-3">
+                  {[
+                    "Toda queja o apelación será atendida sin discriminación.",
+                    "Las quejas o apelaciones que afecten el item de inspección o resultado serán revisadas por la gerencia y un empleado que no haya intervenido en el proceso.",
+                    "El cliente puede registrar su queja o apelación en recepción.",
+                    "El OEC es responsable de las decisiones tomadas frente a quejas y apelaciones por deficiencias del servicio.",
+                    "Toda queja o apelación será analizada en un período mínimo de diez (10) días hábiles.",
+                    "El usuario recibirá confirmación de recibido y procederá su estudio.",
+                  ].map((texto) => (
+                    <div
+                      key={texto}
+                      className="flex items-start gap-3 bg-slate-50 rounded-xl p-4 border border-slate-100"
+                    >
+                      <span className="icon-[mdi--check-circle] text-[#f36b21] text-lg mt-0.5 shrink-0"></span>
+                      <p className="text-sm text-slate-700">{texto}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Flujo del proceso */}
+              <div className="mb-8">
+                <h4 className="font-black text-[#1e4a7a] uppercase text-sm tracking-widest mb-6 flex items-center gap-2">
+                  <span className="icon-[mdi--timeline-text-outline] text-[#f36b21] text-xl"></span>
+                  Flujo del Proceso
+                </h4>
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+                  <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4 flex flex-col">
+                    <div className="w-9 h-9 rounded-full bg-[#1e4a7a] flex items-center justify-center font-black text-white mb-3">
+                      1
+                    </div>
+                    <span className="icon-[mdi--clipboard-text-outline] text-2xl text-[#1e4a7a] mb-2"></span>
+                    <p className="font-bold text-[#1e4a7a] text-sm mb-1">
+                      Recepción
+                    </p>
+                    <p className="text-xs text-slate-600 leading-relaxed">
+                      El cliente registra su queja o apelación en el formato
+                      disponible o por los canales definidos.
+                    </p>
+                  </div>
+                  <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4 flex flex-col">
+                    <div className="w-9 h-9 rounded-full bg-[#f36b21] flex items-center justify-center font-black text-white mb-3">
+                      2
+                    </div>
+                    <span className="icon-[mdi--email-check-outline] text-2xl text-[#f36b21] mb-2"></span>
+                    <p className="font-bold text-[#1e4a7a] text-sm mb-1">
+                      Confirmación
+                    </p>
+                    <p className="text-xs text-slate-600 leading-relaxed">
+                      Se confirma al usuario la recepción de su queja o apelación
+                      por correo electrónico.
+                    </p>
+                  </div>
+                  <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4 flex flex-col">
+                    <div className="w-9 h-9 rounded-full bg-[#1e4a7a] flex items-center justify-center font-black text-white mb-3">
+                      3
+                    </div>
+                    <span className="icon-[mdi--magnify] text-2xl text-[#1e4a7a] mb-2"></span>
+                    <p className="font-bold text-[#1e4a7a] text-sm mb-1">
+                      Análisis
+                    </p>
+                    <p className="text-xs text-slate-600 leading-relaxed">
+                      La gerencia y un empleado independiente revisan y analizan
+                      la información relacionada.
+                    </p>
+                  </div>
+                  <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4 flex flex-col">
+                    <div className="w-9 h-9 rounded-full bg-[#f36b21] flex items-center justify-center font-black text-white mb-3">
+                      4
+                    </div>
+                    <span className="icon-[mdi--account-tie-outline] text-2xl text-[#f36b21] mb-2"></span>
+                    <p className="font-bold text-[#1e4a7a] text-sm mb-1">
+                      Decisión
+                    </p>
+                    <p className="text-xs text-slate-600 leading-relaxed">
+                      Se toma una decisión basada en la revisión y análisis
+                      realizado.
+                    </p>
+                  </div>
+                  <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4 flex flex-col">
+                    <div className="w-9 h-9 rounded-full bg-[#1e4a7a] flex items-center justify-center font-black text-white mb-3">
+                      5
+                    </div>
+                    <span className="icon-[mdi--email-outline] text-2xl text-[#1e4a7a] mb-2"></span>
+                    <p className="font-bold text-[#1e4a7a] text-sm mb-1">
+                      Respuesta
+                    </p>
+                    <p className="text-xs text-slate-600 leading-relaxed">
+                      Se comunica la decisión al usuario por correo electrónico
+                      dentro de un máximo de 15 días hábiles.
+                    </p>
+                  </div>
+                  <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4 flex flex-col">
+                    <div className="w-9 h-9 rounded-full bg-[#f36b21] flex items-center justify-center font-black text-white mb-3">
+                      6
+                    </div>
+                    <span className="icon-[mdi--chart-line] text-2xl text-[#f36b21] mb-2"></span>
+                    <p className="font-bold text-[#1e4a7a] text-sm mb-1">
+                      Mejora
+                    </p>
+                    <p className="text-xs text-slate-600 leading-relaxed">
+                      Se identifican oportunidades de mejora para evitar la
+                      repetición y fortalecer el servicio.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Responsabilidades / Plazo / Registros */}
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="rounded-2xl border border-slate-200 p-6 bg-white">
+                  <h4 className="font-black text-[#1e4a7a] uppercase text-sm tracking-widest mb-4 flex items-center gap-2">
+                    <span className="icon-[mdi--account-group] text-[#f36b21] text-xl"></span>
+                    Responsabilidades
+                  </h4>
+                  <ul className="space-y-3 text-sm text-slate-700">
+                    <li className="flex items-start gap-2">
+                      <span className="icon-[mdi--circle-medium] text-[#f36b21] mt-1 shrink-0"></span>
+                      <span>
+                        <strong>Gerencia:</strong> asegura la revisión y decisión
+                        de quejas y apelaciones.
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="icon-[mdi--circle-medium] text-[#f36b21] mt-1 shrink-0"></span>
+                      <span>
+                        <strong>Coordinador de calidad:</strong> administra el
+                        registro, seguimiento y respuesta.
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="icon-[mdi--circle-medium] text-[#f36b21] mt-1 shrink-0"></span>
+                      <span>
+                        <strong>Inspectores y áreas involucradas:</strong> aportan
+                        información técnica y acciones correctivas.
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="icon-[mdi--circle-medium] text-[#f36b21] mt-1 shrink-0"></span>
+                      <span>
+                        <strong>Alta Dirección:</strong> puede dictar medidas
+                        adicionales para una atención efectiva.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="rounded-2xl border border-slate-200 p-6 bg-slate-50 flex flex-col items-center text-center">
+                  <h4 className="font-black text-[#1e4a7a] uppercase text-sm tracking-widest mb-4 flex items-center gap-2">
+                    <span className="icon-[mdi--clock-outline] text-[#f36b21] text-xl"></span>
+                    Plazo de Respuesta
+                  </h4>
+                  <div className="bg-white rounded-2xl border-2 border-[#f36b21] px-8 py-6 mb-4 w-full">
+                    <p className="text-5xl font-black text-[#1e4a7a] leading-none">
+                      15
+                    </p>
+                    <p className="text-[#f36b21] font-black uppercase text-sm tracking-widest mt-1">
+                      Días hábiles
+                    </p>
+                  </div>
+                  <p className="text-xs text-slate-600 leading-relaxed">
+                    Tiempo mínimo para analizar y responder una queja o apelación
+                    desde su recepción.
+                  </p>
+                </div>
+
+                <div className="rounded-2xl border border-slate-200 p-6 bg-white">
+                  <h4 className="font-black text-[#1e4a7a] uppercase text-sm tracking-widest mb-4 flex items-center gap-2">
+                    <span className="icon-[mdi--folder-lock-outline] text-[#f36b21] text-xl"></span>
+                    Registros y Control
+                  </h4>
+                  <ul className="space-y-3 text-sm text-slate-700">
+                    <li className="flex items-start gap-2">
+                      <span className="icon-[mdi--check-circle] text-[#f36b21] mt-0.5 shrink-0"></span>
+                      Todas las quejas y apelaciones se registran y conservan como
+                      evidencia.
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="icon-[mdi--check-circle] text-[#f36b21] mt-0.5 shrink-0"></span>
+                      Se realiza seguimiento hasta el cierre del caso.
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="icon-[mdi--check-circle] text-[#f36b21] mt-0.5 shrink-0"></span>
+                      Los registros son confidenciales y se almacenan según el
+                      sistema de gestión documental del OEC.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Canales de recepción */}
+              <div className="mt-6 rounded-2xl bg-[#1e4a7a] p-6">
+                <h4 className="font-black text-white uppercase text-sm tracking-widest mb-5 flex items-center gap-2">
+                  <span className="icon-[mdi--inbox-multiple-outline] text-[#f36b21] text-xl"></span>
+                  Canales de Recepción
+                </h4>
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                  <div className="bg-white/5 border border-white/10 rounded-xl p-4 flex flex-col items-center text-center">
+                    <span className="icon-[mdi--counter] text-3xl text-[#f36b21] mb-2"></span>
+                    <p className="text-white font-bold text-sm">Recepción</p>
+                    <p className="text-blue-200 text-xs">Formato físico</p>
+                  </div>
+                  <div className="bg-white/5 border border-white/10 rounded-xl p-4 flex flex-col items-center text-center">
+                    <span className="icon-[mdi--email-outline] text-3xl text-[#f36b21] mb-2"></span>
+                    <p className="text-white font-bold text-sm">
+                      Correo electrónico
+                    </p>
+                    <p className="text-blue-200 text-xs">del OEC</p>
+                  </div>
+                  <div className="bg-white/5 border border-white/10 rounded-xl p-4 flex flex-col items-center text-center">
+                    <span className="icon-[mdi--phone-outline] text-3xl text-[#f36b21] mb-2"></span>
+                    <p className="text-white font-bold text-sm">
+                      Línea telefónica
+                    </p>
+                    <p className="text-blue-200 text-xs">del OEC</p>
+                  </div>
+                  <div className="bg-white/5 border border-white/10 rounded-xl p-4 flex flex-col items-center text-center">
+                    <span className="icon-[mdi--dots-horizontal-circle-outline] text-3xl text-[#f36b21] mb-2"></span>
+                    <p className="text-white font-bold text-sm">Otros canales</p>
+                    <p className="text-blue-200 text-xs">autorizados</p>
+                  </div>
+                </div>
+                <p className="text-blue-100 text-center text-sm mt-6 flex items-center justify-center gap-2">
+                  <span className="icon-[mdi--shield-check] text-[#f36b21] text-xl"></span>
+                  En INSPECOL CERTIFICACIONES S.A.S. trabajamos por la mejora
+                  continua y la satisfacción de nuestros clientes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Contact Section - Usando los colores del logo en el formulario */}
       <section id="contacto" className="py-20 bg-[#1e4a7a]">
