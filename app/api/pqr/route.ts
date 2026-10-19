@@ -113,10 +113,9 @@ export async function POST(request: Request) {
 
     await Promise.all([clientMail, internalMail]);
 
-    await sendWhatsAppNotification(
-      `Nueva PQR radicada\n\nRadicado: ${radicado}\nTipo: ${pqrType}\nNombre: ${name}\nDocumento: ${document}\nCorreo: ${email}\nFecha y hora: ${formattedDate}\n\nDescripción:\n${description}`,
-      [radicado, pqrType, name, document, email, formattedDate]
-    );
+    void sendWhatsAppNotification(
+      `Se ha radicado una nueva ${pqrType} de parte de ${name}. Puede consultarla en https://mail.hostinger.com/ con sus credenciales.`
+    ).catch(() => {});
 
     return NextResponse.json({ success: true, radicado });
   } catch (error) {

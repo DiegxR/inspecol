@@ -1,64 +1,30 @@
-const apiToken = process.env.WHATSAPP_API_TOKEN;
-const phoneNumberId = process.env.WHATSAPP_PHONE_NUMBER_ID;
-const notifyTo = process.env.WHATSAPP_NOTIFY_TO;
-const apiVersion = process.env.WHATSAPP_API_VERSION ?? "v21.0";
-const templateName = process.env.WHATSAPP_TEMPLATE_NAME;
-const templateLang = process.env.WHATSAPP_TEMPLATE_LANG ?? "es";
+const apiKey = process.env.TEXTMEBOT_API_KEY;
+const recipient = process.env.TEXTMEBOT_RECIPIENT;
+const endpoint = process.env.TEXTMEBOT_ENDPOINT ?? "http://api.textmebot.com/send.php";
 
 type SendResult =
   | { skipped: true }
   | { sent: true }
   | { error: string };
 
-export async function sendWhatsAppNotification(
-  text: string,
-  templateParams: string[] = []
-): Promise<SendResult> {
-  if (!apiToken || !phoneNumberId || !notifyTo) {
+export async function sendWhatsAppNotification(text: string): Promise<SendResult> {
+  if (!apiKey || !recipient) {
     console.warn(
-      "[WhatsApp] Faltan variables de entorno (WHATSAPP_API_TOKEN, WHATSAPP_PHONE_NUMBER_ID, WHATSAPP_NOTIFY_TO). Notificación omitida."
+      "[WhatsApp] Faltan variables de entorno (TEXTMEBOT_API_KEY, TEXTMEBOT_RECIPIENT). Notificación omitida."
     );
     return { skipped: true };
   }
 
-  const payload = templateName
-    ? {
-        messaging_product: "whatsapp",
-        to: notifyTo,
-        type: "template",
-        template: {
-          name: templateName,
-          language: { code: templateLang },
-          components: [
-            {
-              type: "body",
-              parameters: templateParams.map((value) => ({
-                type: "text",
-                text: value,
-              })),
-            },
-          ],
-        },
-      }
-    : {
-        messaging_product: "whatsapp",
-        to: notifyTo,
-        type: "text",
-        text: { body: text },
-      };
+  const params = new URLSearchParams({
+    recipient,
+    apikey: apiKey,
+    text,
+  });
 
   try {
-    const response = await fetch(
-      `https://graph.facebook.com/${apiVersion}/${phoneNumberId}/messages`,
-      {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${apiToken}`,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(payload),
-      }
-    );
+    const response = await fetch(`${endpoint}?${params.toString()}`, {
+      method: "GET",
+    });
 
     if (!response.ok) {
       const detail = await response.text();
