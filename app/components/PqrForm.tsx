@@ -155,9 +155,8 @@ export default function PqrForm() {
             className="mt-2 w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-[#f36b21] outline-none"
           >
             <option value="">Seleccione una opción</option>
-            <option value="Petición">Petición</option>
             <option value="Queja">Queja</option>
-            <option value="Reclamo">Reclamo</option>
+            <option value="Apelación">Apelación</option>
             <option value="Sugerencia">Sugerencia</option>
           </select>
         </label>

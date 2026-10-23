@@ -1,6 +1,6 @@
 import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
-import { sendWhatsAppNotification } from "@/app/lib/whatsapp";
+// import { sendWhatsAppNotification } from "@/app/lib/whatsapp";
 
 const smtpHost = process.env.SMTP_HOST;
 const smtpPort = process.env.SMTP_PORT;
@@ -113,9 +113,10 @@ export async function POST(request: Request) {
 
     await Promise.all([clientMail, internalMail]);
 
-    void sendWhatsAppNotification(
-      `Se ha radicado una nueva ${pqrType} de parte de ${name}. Puede consultarla en https://mail.hostinger.com/ con sus credenciales.`
-    ).catch(() => {});
+    // Notificación por WhatsApp deshabilitada temporalmente (el bot no está funcionando).
+    // void sendWhatsAppNotification(
+    //   `Se ha radicado una nueva ${pqrType} de parte de ${name}. Puede consultarla en https://mail.hostinger.com/ con sus credenciales.`
+    // ).catch(() => {});
 
     return NextResponse.json({ success: true, radicado });
   } catch (error) {

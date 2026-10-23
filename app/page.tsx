@@ -44,7 +44,7 @@ export default function Home() {
               className="text-slate-700 hover:text-[#f36b21] transition font-semibold"
             >
               Normativa
-            </a> 
+            </a>
             <a
               href="#politicas"
               className="text-slate-700 hover:text-[#f36b21] transition font-semibold"
@@ -124,16 +124,7 @@ export default function Home() {
       {/* Trust Badges - Usando el Azul Navy para los iconos */}
       <section className="py-10 bg-slate-50 border-b border-gray-200">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="flex flex-col items-center text-center">
-              <span className="icon-[mdi--award] text-4xl text-[#1e4a7a] mb-3"></span>
-              <span className="text-slate-800 font-bold block">
-                Resolución 40150
-              </span>
-              <span className="text-xs text-slate-500 uppercase tracking-tighter">
-                Certificación Oficial
-              </span>
-            </div>
+          <div className="flex flex-wrap justify-between gap-8 max-w-2xl mx-auto">
             <div className="flex flex-col items-center text-center">
               <span className="icon-[mdi--account-group] text-4xl text-[#1e4a7a] mb-3"></span>
               <span className="text-slate-800 font-bold block">
@@ -158,13 +149,13 @@ export default function Home() {
                 Respuesta Ágil
               </span>
               <span className="text-xs text-slate-500 uppercase tracking-tighter">
-                Atención en 48h
+                Atención Rápida
               </span>
             </div>
           </div>
         </div>
       </section>
-       {/* Normativa Section */}
+      {/* Normativa Section */}
       <section id="normativa" className="py-24 bg-slate-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -172,68 +163,65 @@ export default function Home() {
               Normativas y Certificaciones
             </span>
             <h2 className="text-3xl md:text-5xl font-black text-[#1e4a7a] mt-2">
-              Inspecol Certificaciones: Seguridad y Garantía en Gas Natural
+              Seguridad y Garantía de Gases Combustibles
             </h2>
           </div>
 
           <div className="max-w-4xl mx-auto mb-12">
             <p className="text-slate-700 text-lg leading-relaxed mb-6">
-              En Inspecol Certificaciones, nuestra prioridad es la tranquilidad y seguridad de su hogar o negocio en Florencia, Caquetá. Somos expertos en la inspección, mantenimiento y certificación de instalaciones de gas natural, garantizando que cada sistema opere bajo los más altos estándares técnicos y legales vigentes en Colombia.
+              En Inspecol Certificaciones, nuestra prioridad es la tranquilidad
+              y seguridad de su hogar o negocio en Florencia, Caquetá. Somos
+              expertos en la inspección y revisión de instalaciones de gas
+              natural, garantizando que cada sistema opere bajo los más altos
+              estándares técnicos y legales vigentes en Colombia.
             </p>
 
             <h3 className="text-2xl font-bold text-[#1e4a7a] mb-4">
               Nuestro Compromiso con la Seguridad
             </h3>
             <p className="text-slate-700 leading-relaxed mb-8">
-              Entendemos que el gas natural es un servicio esencial que exige rigor. Por ello, en cada una de nuestras intervenciones, aplicamos un protocolo de evaluación técnica diseñado para detectar y corregir cualquier riesgo, protegiendo así su patrimonio y la integridad de su familia.
+              Entendemos que el gas natural es un servicio esencial que exige
+              rigor. Por ello, en cada una de nuestras intervenciones, aplicamos
+              un protocolo de evaluación técnica diseñado para detectar y
+              corregir cualquier riesgo, protegiendo así su patrimonio y la
+              integridad de su familia.
             </p>
 
             <h3 className="text-2xl font-bold text-[#1e4a7a] mb-4">
               Marco Normativo y Calidad
             </h3>
-            <p className="text-slate-700 mb-6">
-              Operamos bajo el estricto cumplimiento de las directrices de los entes reguladores nacionales. Nuestra metodología de trabajo se basa en:
-            </p>
 
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-                <div className="flex items-center gap-3 mb-3">
+                <div className="flex items-center gap-3">
                   <span className="icon-[mdi--gavel] text-2xl text-[#f36b21]"></span>
-                  <h4 className="font-bold text-[#1e4a7a]">Regulación CREG</h4>
+                  <h4 className="font-bold text-[#1e4a7a]"></h4>
                 </div>
-                <p className="text-slate-600 text-sm leading-relaxed">
-                  Cumplimiento total de la Resolución 067 de 1995 y Resolución 059 de 2012, referentes al Código de Distribución de Gas y los procesos de Revisión Periódica Obligatoria (RPO).
-                </p>
               </div>
 
               <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-                <div className="flex items-center gap-3 mb-3">
+                <div className="flex items-center gap-3">
                   <span className="icon-[mdi--office-building] text-2xl text-[#f36b21]"></span>
-                  <h4 className="font-bold text-[#1e4a7a]">Ministerio de Minas y Energía</h4>
+                  <h4 className="font-bold text-[#1e4a7a]">
+                    
+                  </h4>
                 </div>
-                <p className="text-slate-600 text-sm leading-relaxed">
-                  Ejecución técnica alineada con la Resolución 41385 de 2017, asegurando el manejo correcto de defectos y condiciones de seguridad en instalaciones internas.
-                </p>
               </div>
 
               <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-                <div className="flex items-center gap-3 mb-3">
+                <div className="flex items-center gap-3">
                   <span className="icon-[mdi--checkbox-marked-circle] text-2xl text-[#f36b21]"></span>
-                  <h4 className="font-bold text-[#1e4a7a]">Estándares Técnicos (NTC)</h4>
+                  <h4 className="font-bold text-[#1e4a7a]">
+                    
+                  </h4>
                 </div>
-                <p className="text-slate-600 text-sm leading-relaxed">
-                  Aplicamos estrictamente las normas NTC 2505 (diseño, construcción y pruebas de hermeticidad) y NTC 3853, garantizando que cada componente de su sistema cumpla con la calidad requerida.
-                </p>
               </div>
 
               <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-                <div className="flex items-center gap-3 mb-3">
+                <div className="flex items-center gap-3">
                   <span className="icon-[mdi--certificate] text-2xl text-[#f36b21]"></span>
-                  <h4 className="font-bold text-[#1e4a7a]">Acreditación</h4>
+                  <h4 className="font-bold text-[#1e4a7a]"></h4>
                 </div>
-                <p className="text-slate-600 text-sm leading-relaxed">
-                  Nuestros procesos de inspección siguen los lineamientos de imparcialidad y precisión bajo la norma ISO/IEC 17020.
-                </p>
               </div>
             </div>
 
@@ -244,39 +232,62 @@ export default function Home() {
               <div className="flex items-start gap-3">
                 <span className="icon-[mdi--check-circle] text-[#f36b21] text-xl mt-0.5"></span>
                 <div>
-                  <p className="font-bold text-slate-800">Personal Altamente Calificado</p>
-                  <p className="text-slate-600 text-sm">Nuestro equipo técnico cuenta con certificación de competencias laborales (SENA) y está en constante actualización normativa.</p>
+                  <p className="font-bold text-slate-800">
+                    Personal Altamente Calificado
+                  </p>
+                  <p className="text-slate-600 text-sm">
+                    Nuestro equipo técnico cuenta con certificación de
+                    competencias laborales y está en constante actualización
+                    normativa.
+                  </p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <span className="icon-[mdi--check-circle] text-[#f36b21] text-xl mt-0.5"></span>
                 <div>
-                  <p className="font-bold text-slate-800">Tecnología y Precisión</p>
-                  <p className="text-slate-600 text-sm">Utilizamos equipos de medición calibrados para realizar diagnósticos exactos y oportunos.</p>
+                  <p className="font-bold text-slate-800">
+                    Tecnología y Precisión
+                  </p>
+                  <p className="text-slate-600 text-sm">
+                    Utilizamos equipos de medición calibrados para realizar
+                    inspecciones exactas y oportunos.
+                  </p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <span className="icon-[mdi--check-circle] text-[#f36b21] text-xl mt-0.5"></span>
                 <div>
-                  <p className="font-bold text-slate-800">Transparencia Total</p>
-                  <p className="text-slate-600 text-sm">Entregamos certificados de conformidad con plena validez legal, reportando su estado ante la empresa distribuidora de gas correspondiente.</p>
+                  <p className="font-bold text-slate-800">
+                    Transparencia Total
+                  </p>
+                  <p className="text-slate-600 text-sm">
+                    Entregamos certificados de conformidad con plena validez
+                    legal, reportando su estado ante la empresa distribuidora de
+                    gas correspondiente.
+                  </p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <span className="icon-[mdi--check-circle] text-[#f36b21] text-xl mt-0.5"></span>
                 <div>
                   <p className="font-bold text-slate-800">Presencia Local</p>
-                  <p className="text-slate-600 text-sm">Conocemos las necesidades de nuestra región. Estamos comprometidos con el desarrollo seguro de Florencia, Caquetá.</p>
+                  <p className="text-slate-600 text-sm">
+                    Conocemos las necesidades de nuestra región. Estamos
+                    comprometidos con el desarrollo seguro de Florencia,
+                    Caquetá.
+                  </p>
                 </div>
               </div>
             </div>
 
             <div className="bg-gradient-to-r from-[#1e4a7a] to-[#153456] rounded-3xl p-8 text-center">
               <h3 className="text-2xl font-bold text-white mb-4">
-                ¿Necesita una revisión o certificación?
+                ¿Su instalación requiere una inspección?
               </h3>
               <p className="text-blue-100 mb-6">
-                La seguridad no puede esperar. Si requiere programar una inspección periódica, tiene dudas sobre su instalación o desea una revisión preventiva, estamos listos para atenderle.
+                La seguridad no puede esperar. Si requiere programar una
+                inspección periódica, tiene dudas sobre su instalación o desea
+                una revisión preventiva, estamos listos para atenderle.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
@@ -296,13 +307,14 @@ export default function Home() {
                 </a>
               </div>
               <p className="text-blue-200 mt-6 text-sm italic">
-                Inspecol Certificaciones: Expertos en seguridad, comprometidos con el Caquetá.
+                Inspecol Certificaciones: Expertos en seguridad, comprometidos
+                con el Caquetá.
               </p>
             </div>
           </div>
         </div>
       </section>
-      
+
       {/* Services Section */}
       <section id="servicios" className="py-24 bg-white">
         <div className="container mx-auto px-4">
@@ -341,11 +353,10 @@ export default function Home() {
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="icon-[mdi--check-bold] text-[#f36b21]"></span>{" "}
-                  Medidores de Gas
+                  Revisiones Previas y Reformas
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="icon-[mdi--check-bold] text-[#f36b21]"></span>{" "}
-                  Revisión Periódica Obligatoria (RPO)
+                 
                 </li>
               </ul>
             </div>
@@ -358,24 +369,10 @@ export default function Home() {
               <h3 className="text-xl font-bold text-[#1e4a7a] mb-4">
                 Comercial
               </h3>
-              <p className="text-slate-600 text-sm leading-relaxed mb-6">
+              <p className="text-slate-600 text-sm leading-relaxed">
                 Restaurantes, hoteles y locales. Aseguramos el cumplimiento de
                 normativas para su negocio.
               </p>
-              <ul className="space-y-3 text-sm font-semibold text-slate-700">
-                <li className="flex items-center gap-2">
-                  <span className="icon-[mdi--check-bold] text-[#f36b21]"></span>{" "}
-                  Hornos y Estufas
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="icon-[mdi--check-bold] text-[#f36b21]"></span>{" "}
-                  Ventilación Mecánica
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="icon-[mdi--check-bold] text-[#f36b21]"></span>{" "}
-                  Cocinas Industriales
-                </li>
-              </ul>
             </div>
           </div>
         </div>
@@ -393,12 +390,6 @@ export default function Home() {
             </h2>
             <div className="flex flex-wrap justify-center gap-x-3 gap-y-2 mt-4 text-sm font-bold text-slate-600">
               <span>Imparcialidad</span>
-              <span className="text-[#f36b21]">•</span>
-              <span>Operación</span>
-              <span className="text-[#f36b21]">•</span>
-              <span>Competencia</span>
-              <span className="text-[#f36b21]">•</span>
-              <span>Cultura de Integridad</span>
             </div>
             <p className="text-slate-600 max-w-2xl mx-auto mt-4 leading-relaxed">
               Lineamientos que garantizan la confiabilidad, objetividad,
@@ -427,17 +418,19 @@ export default function Home() {
 
             <div className="p-8">
               <p className="text-slate-700 leading-relaxed mb-6 text-sm md:text-base">
-                INSPECOL presta sus servicios de inspección bajo los principios de{" "}
+                INSPECOL presta sus servicios de inspección bajo los principios
+                de{" "}
                 <strong className="text-[#1e4a7a]">
                   imparcialidad, independencia, objetividad, integridad y
                   confidencialidad
                 </strong>
                 , garantizando que todas sus actividades se realizan con
                 transparencia y ética profesional. Reconocemos la importancia de
-                identificar, analizar y gestionar los riesgos a la imparcialidad,
-                comprometiéndonos a que nuestras actividades se realicen libres
-                de presiones comerciales, financieras o de cualquier otra índole
-                que puedan comprometer la objetividad de los resultados.
+                identificar, analizar y gestionar los riesgos a la
+                imparcialidad, comprometiéndonos a que nuestras actividades se
+                realicen libres de presiones comerciales, financieras o de
+                cualquier otra índole que puedan comprometer la objetividad de
+                los resultados.
               </p>
 
               <div className="grid md:grid-cols-2 gap-4">
@@ -452,9 +445,8 @@ export default function Home() {
                 <div className="flex items-start gap-3 bg-slate-50 rounded-xl p-4 border border-slate-100">
                   <span className="icon-[mdi--check-decagram] text-[#f36b21] text-xl mt-0.5 shrink-0"></span>
                   <p className="text-sm text-slate-700">
-                    Prestación del servicio{" "}
-                    <strong>sin discriminación</strong> hacia los solicitantes,
-                    garantizando igualdad de acceso.
+                    Prestación del servicio <strong>sin discriminación</strong>{" "}
+                    hacia los solicitantes, garantizando igualdad de acceso.
                   </p>
                 </div>
                 <div className="flex items-start gap-3 bg-slate-50 rounded-xl p-4 border border-slate-100">
@@ -477,15 +469,17 @@ export default function Home() {
                   <span className="icon-[mdi--check-decagram] text-[#f36b21] text-xl mt-0.5 shrink-0"></span>
                   <p className="text-sm text-slate-700">
                     Los registros se mantienen bajo{" "}
-                    <strong>control y confidencialidad</strong>, salvo documentos
-                    de carácter público por disposición legal.
+                    <strong>control y confidencialidad</strong>, salvo
+                    documentos de carácter público por disposición legal.
                   </p>
                 </div>
                 <div className="flex items-start gap-3 bg-slate-50 rounded-xl p-4 border border-slate-100">
                   <span className="icon-[mdi--check-decagram] text-[#f36b21] text-xl mt-0.5 shrink-0"></span>
                   <p className="text-sm text-slate-700">
                     Servicios realizados únicamente por{" "}
-                    <strong>personal competente, calificado y autorizado</strong>{" "}
+                    <strong>
+                      personal competente, calificado y autorizado
+                    </strong>{" "}
                     que garantiza la confiabilidad de los resultados.
                   </p>
                 </div>
@@ -503,8 +497,11 @@ export default function Home() {
                 <div className="flex items-start gap-3 bg-slate-50 rounded-xl p-4 border border-slate-100">
                   <span className="icon-[mdi--check-decagram] text-[#f36b21] text-xl mt-0.5 shrink-0"></span>
                   <p className="text-sm text-slate-700">
-                    La dirección asume la responsabilidad de velar permanentemente
-                    por la <strong>imparcialidad, confidencialidad e integridad</strong>{" "}
+                    La dirección asume la responsabilidad de velar
+                    permanentemente por la{" "}
+                    <strong>
+                      imparcialidad, confidencialidad e integridad
+                    </strong>{" "}
                     y la mejora continua.
                   </p>
                 </div>
@@ -512,128 +509,8 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Cuatro políticas / principios */}
+          {/* Cultura de integridad y resultados */}
           <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 mb-8">
-            {/* Política de Operación */}
-            <div className="rounded-3xl bg-white border border-slate-200 shadow-sm overflow-hidden">
-              <div className="bg-[#1e4a7a] px-7 py-5 flex items-center gap-4">
-                <div className="w-12 h-12 rounded-xl bg-white/10 border border-white/20 flex items-center justify-center shrink-0">
-                  <span className="icon-[mdi--cog] text-2xl text-white"></span>
-                </div>
-                <div>
-                  <p className="text-[#f36b21] font-black text-xs tracking-widest uppercase">
-                    Política 2
-                  </p>
-                  <h3 className="text-xl font-black text-white leading-tight">
-                    Política de Operación
-                  </h3>
-                </div>
-              </div>
-              <div className="p-7">
-                <p className="text-slate-700 text-sm leading-relaxed mb-5 bg-slate-50 rounded-xl p-4 border border-slate-100">
-                  INSPECOL desarrolla sus actividades garantizando el
-                  cumplimiento de requisitos normativos, reglamentarios y del
-                  sistema de gestión.
-                </p>
-                <ul className="space-y-3 text-sm text-slate-700">
-                  <li className="flex items-start gap-3">
-                    <span className="icon-[mdi--file-document-outline] text-[#1e4a7a] text-lg mt-0.5 shrink-0"></span>
-                    Uso de documentos técnicos y normativos vigentes.
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="icon-[mdi--wrench-outline] text-[#1e4a7a] text-lg mt-0.5 shrink-0"></span>
-                    Equipos calibrados o verificados.
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="icon-[mdi--office-building-outline] text-[#1e4a7a] text-lg mt-0.5 shrink-0"></span>
-                    Instalaciones adecuadas para la inspección.
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="icon-[mdi--account-hard-hat-outline] text-[#1e4a7a] text-lg mt-0.5 shrink-0"></span>
-                    Personal competente y autorizado.
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="icon-[mdi--target] text-[#1e4a7a] text-lg mt-0.5 shrink-0"></span>
-                    Sistema de gestión orientado a la calidad, la mejora continua
-                    y la confiabilidad.
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="icon-[mdi--chart-line] text-[#1e4a7a] text-lg mt-0.5 shrink-0"></span>
-                    Seguimiento mediante auditorías internas, revisiones por la
-                    dirección y evaluaciones de organismos de acreditación.
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="icon-[mdi--account-group-outline] text-[#1e4a7a] text-lg mt-0.5 shrink-0"></span>
-                    Compromiso de la dirección con los recursos necesarios para la
-                    operación eficaz.
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Política de Competencia del Personal */}
-            <div className="rounded-3xl bg-white border border-slate-200 shadow-sm overflow-hidden">
-              <div className="bg-[#1e4a7a] px-7 py-5 flex items-center gap-4">
-                <div className="w-12 h-12 rounded-xl bg-white/10 border border-white/20 flex items-center justify-center shrink-0">
-                  <span className="icon-[mdi--account-tie-outline] text-2xl text-white"></span>
-                </div>
-                <div>
-                  <p className="text-[#f36b21] font-black text-xs tracking-widest uppercase">
-                    Política 3
-                  </p>
-                  <h3 className="text-xl font-black text-white leading-tight">
-                    Competencia del Personal
-                  </h3>
-                </div>
-              </div>
-              <div className="p-7">
-                <p className="text-slate-700 text-sm leading-relaxed mb-5 bg-slate-50 rounded-xl p-4 border border-slate-100">
-                  La competencia del personal es fundamental para asegurar la
-                  calidad, confiabilidad e imparcialidad de las actividades de
-                  inspección.
-                </p>
-                <ul className="space-y-3 text-sm text-slate-700">
-                  <li className="flex items-start gap-3">
-                    <span className="icon-[mdi--account-check-outline] text-[#1e4a7a] text-lg mt-0.5 shrink-0"></span>
-                    El personal técnico y administrativo cumple requisitos de
-                    competencia definidos.
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="icon-[mdi--school-outline] text-[#1e4a7a] text-lg mt-0.5 shrink-0"></span>
-                    Formación, capacitación, actualización y familiarización
-                    continua.
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="icon-[mdi--folder-multiple-outline] text-[#1e4a7a] text-lg mt-0.5 shrink-0"></span>
-                    Conocimiento de la documentación del Sistema Integrado de
-                    Gestión (SIG).
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="icon-[mdi--certificate-outline] text-[#1e4a7a] text-lg mt-0.5 shrink-0"></span>
-                    Conocimiento de los requisitos de la NTC ISO/IEC 17020.
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="icon-[mdi--target] text-[#1e4a7a] text-lg mt-0.5 shrink-0"></span>
-                    Dominio de métodos y procedimientos de inspección aplicables.
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="icon-[mdi--book-open-outline] text-[#1e4a7a] text-lg mt-0.5 shrink-0"></span>
-                    Conocimiento de requisitos técnicos, normativos y
-                    reglamentarios.
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="icon-[mdi--shield-check-outline] text-[#1e4a7a] text-lg mt-0.5 shrink-0"></span>
-                    Fomento de ética, transparencia, imparcialidad y
-                    confidencialidad.
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="icon-[mdi--chart-line] text-[#1e4a7a] text-lg mt-0.5 shrink-0"></span>
-                    Seguimiento y evaluación permanente del desempeño.
-                  </li>
-                </ul>
-              </div>
-            </div>
-
             {/* Cultura de Integridad */}
             <div className="rounded-3xl bg-white border border-slate-200 shadow-sm overflow-hidden">
               <div className="bg-[#1e4a7a] px-7 py-5 flex items-center gap-4">
@@ -642,7 +519,7 @@ export default function Home() {
                 </div>
                 <div>
                   <p className="text-[#f36b21] font-black text-xs tracking-widest uppercase">
-                    Política 4
+                    Política 2
                   </p>
                   <h3 className="text-xl font-black text-white leading-tight">
                     Cultura de Integridad
@@ -653,8 +530,8 @@ export default function Home() {
                 <p className="text-slate-700 text-sm leading-relaxed mb-5 bg-slate-50 rounded-xl p-4 border border-slate-100">
                   En INSPECOL promovemos una cultura de integridad basada en un
                   código que orienta a nuestro personal en la toma de decisiones
-                  ante situaciones o dilemas éticos, fortaleciendo la confianza de
-                  nuestros clientes y partes interesadas.
+                  ante situaciones o dilemas éticos, fortaleciendo la confianza
+                  de nuestros clientes y partes interesadas.
                 </p>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="rounded-2xl bg-[#1e4a7a] p-5 text-white">
@@ -795,8 +672,8 @@ export default function Home() {
                     </h4>
                   </div>
                   <p className="text-slate-600 text-sm leading-relaxed">
-                    Expresión de insatisfacción sobre las actividades del OEC, para
-                    la cual se espera respuesta.
+                    Expresión de insatisfacción sobre las actividades del OEC,
+                    para la cual se espera respuesta.
                   </p>
                 </div>
                 <div className="rounded-2xl border border-slate-200 p-5 bg-slate-50">
@@ -809,8 +686,8 @@ export default function Home() {
                     </h4>
                   </div>
                   <p className="text-slate-600 text-sm leading-relaxed">
-                    Solicitud para reconsiderar una decisión adversa tomada por el
-                    OEC relacionada con el estado o resultado de inspección.
+                    Solicitud para reconsiderar una decisión adversa tomada por
+                    el OEC relacionada con el estado o resultado de inspección.
                   </p>
                 </div>
                 <div className="rounded-2xl border border-slate-200 p-5 bg-slate-50">
@@ -884,8 +761,8 @@ export default function Home() {
                       Confirmación
                     </p>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Se confirma al usuario la recepción de su queja o apelación
-                      por correo electrónico.
+                      Se confirma al usuario la recepción de su queja o
+                      apelación por correo electrónico.
                     </p>
                   </div>
                   <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4 flex flex-col">
@@ -954,8 +831,8 @@ export default function Home() {
                     <li className="flex items-start gap-2">
                       <span className="icon-[mdi--circle-medium] text-[#f36b21] mt-1 shrink-0"></span>
                       <span>
-                        <strong>Gerencia:</strong> asegura la revisión y decisión
-                        de quejas y apelaciones.
+                        <strong>Gerencia:</strong> asegura la revisión y
+                        decisión de quejas y apelaciones.
                       </span>
                     </li>
                     <li className="flex items-start gap-2">
@@ -968,8 +845,8 @@ export default function Home() {
                     <li className="flex items-start gap-2">
                       <span className="icon-[mdi--circle-medium] text-[#f36b21] mt-1 shrink-0"></span>
                       <span>
-                        <strong>Inspectores y áreas involucradas:</strong> aportan
-                        información técnica y acciones correctivas.
+                        <strong>Inspectores y áreas involucradas:</strong>{" "}
+                        aportan información técnica y acciones correctivas.
                       </span>
                     </li>
                     <li className="flex items-start gap-2">
@@ -996,8 +873,8 @@ export default function Home() {
                     </p>
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Tiempo mínimo para analizar y responder una queja o apelación
-                    desde su recepción.
+                    Tiempo mínimo para analizar y responder una queja o
+                    apelación desde su recepción.
                   </p>
                 </div>
 
@@ -1009,8 +886,8 @@ export default function Home() {
                   <ul className="space-y-3 text-sm text-slate-700">
                     <li className="flex items-start gap-2">
                       <span className="icon-[mdi--check-circle] text-[#f36b21] mt-0.5 shrink-0"></span>
-                      Todas las quejas y apelaciones se registran y conservan como
-                      evidencia.
+                      Todas las quejas y apelaciones se registran y conservan
+                      como evidencia.
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="icon-[mdi--check-circle] text-[#f36b21] mt-0.5 shrink-0"></span>
@@ -1032,30 +909,44 @@ export default function Home() {
                   Canales de Recepción
                 </h4>
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-                  <div className="bg-white/5 border border-white/10 rounded-xl p-4 flex flex-col items-center text-center">
+                  <a
+                    href="#contacto"
+                    className="bg-white/5 border border-white/10 rounded-xl p-4 flex flex-col items-center text-center hover:bg-white/10 hover:border-[#f36b21] transition-colors"
+                  >
                     <span className="icon-[mdi--counter] text-3xl text-[#f36b21] mb-2"></span>
                     <p className="text-white font-bold text-sm">Recepción</p>
                     <p className="text-blue-200 text-xs">Formato físico</p>
-                  </div>
-                  <div className="bg-white/5 border border-white/10 rounded-xl p-4 flex flex-col items-center text-center">
+                  </a>
+                  <a
+                    href="#contacto"
+                    className="bg-white/5 border border-white/10 rounded-xl p-4 flex flex-col items-center text-center hover:bg-white/10 hover:border-[#f36b21] transition-colors"
+                  >
                     <span className="icon-[mdi--email-outline] text-3xl text-[#f36b21] mb-2"></span>
                     <p className="text-white font-bold text-sm">
                       Correo electrónico
                     </p>
                     <p className="text-blue-200 text-xs">del OEC</p>
-                  </div>
-                  <div className="bg-white/5 border border-white/10 rounded-xl p-4 flex flex-col items-center text-center">
+                  </a>
+                  <a
+                    href="#contacto"
+                    className="bg-white/5 border border-white/10 rounded-xl p-4 flex flex-col items-center text-center hover:bg-white/10 hover:border-[#f36b21] transition-colors"
+                  >
                     <span className="icon-[mdi--phone-outline] text-3xl text-[#f36b21] mb-2"></span>
                     <p className="text-white font-bold text-sm">
                       Línea telefónica
                     </p>
                     <p className="text-blue-200 text-xs">del OEC</p>
-                  </div>
-                  <div className="bg-white/5 border border-white/10 rounded-xl p-4 flex flex-col items-center text-center">
+                  </a>
+                  <a
+                    href="#formulario-pqr"
+                    className="bg-white/5 border border-white/10 rounded-xl p-4 flex flex-col items-center text-center hover:bg-white/10 hover:border-[#f36b21] transition-colors"
+                  >
                     <span className="icon-[mdi--dots-horizontal-circle-outline] text-3xl text-[#f36b21] mb-2"></span>
-                    <p className="text-white font-bold text-sm">Otros canales</p>
+                    <p className="text-white font-bold text-sm">
+                      Otros canales
+                    </p>
                     <p className="text-blue-200 text-xs">autorizados</p>
-                  </div>
+                  </a>
                 </div>
                 <p className="text-blue-100 text-center text-sm mt-6 flex items-center justify-center gap-2">
                   <span className="icon-[mdi--shield-check] text-[#f36b21] text-xl"></span>
@@ -1078,8 +969,7 @@ export default function Home() {
               </h2>
               <p className="text-blue-100 mb-8 text-lg">
                 No arriesgue su seguridad ni la legalidad de su servicio.
-                Nuestro equipo en Florencia, Caquetá está listo para
-                atenderle.
+                Nuestro equipo en Florencia, Caquetá está listo para atenderle.
               </p>
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
@@ -1104,10 +994,25 @@ export default function Home() {
                     <p className="font-bold">inspecciones@inspecol.com</p>
                   </div>
                 </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center border border-white/20">
+                    <span className="icon-[mdi--map-marker-outline] text-2xl"></span>
+                  </div>
+                  <div>
+                    <p className="text-xs uppercase font-bold text-blue-200">
+                      Dirección
+                    </p>
+                    <p className="font-bold">Carrera 6 # 19-22</p>
+                    <p className="text-blue-100 text-sm">B/ Buenos Aires</p>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className="bg-white p-8 rounded-3xl shadow-2xl border-t-8 border-[#f36b21]">
+            <div
+              id="formulario-pqr"
+              className="scroll-mt-24 bg-white p-8 rounded-3xl shadow-2xl border-t-8 border-[#f36b21]"
+            >
               <PqrForm />
             </div>
           </div>
